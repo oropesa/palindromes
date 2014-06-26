@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
     <style>
         .form-inline div { display: inline; }
+        .form-inline .output span { padding: 0 0.3rem; }
+        .form-inline .output span.isOk      { background-color: #D2FFD2; }
+        .form-inline .output span.isError   { background-color: #FFD2D2; }
+        .form-inline .output span.isProcess { background-color: #D2D2FF; }
+        .form-inline .checked span.isOk,        .form-inline .output span.isTextOk      { color: #00D100; }
+        .form-inline .checked span.isError,     .form-inline .output span.isTextError   { color: #D10000; }
+        .form-inline .checked span.isProcess,   .form-inline .output span.isTextProcess { color: #0000D1; }
     </style>
 
 </head>
@@ -24,20 +31,22 @@
 
                 <form id="method-one" role="form" class="form-inline">
                     <label for="method-one">Method #1</label>
-                    <input  type="text" class="form-control" placeholder="Insert palindrome" value="1234321">
+                    <input  type="text" class="form-control" placeholder="Insert palindrome" value="1234567654321">
                     <button type="button" class="btn btn-default">
                         <span class="glyphicon glyphicon-refresh"></span>
                     </button>
-                    <div></div>
+                    <div class="checked"></div>
+                    <div class="output"></div>
                 </form><br>
 
                 <form id="method-two" role="form" class="form-inline">
                     <label for="method-two">Method #2</label>
-                    <input type="text" class="form-control" placeholder="Insert palindrome" value="1234321">
+                    <input type="text" class="form-control" placeholder="Insert palindrome" value="1234567654321">
                     <button type="button" class="btn btn-default">
                         <span class="glyphicon glyphicon-refresh"></span>
                     </button>
-                    <div></div>
+                    <div class="checked"></div>
+                    <div class="output"></div>
                 </form>
 
             </div>
